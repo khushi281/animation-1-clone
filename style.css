@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+
+
+    animation: sky;
+    animation-duration: 3s;
+  
+}
+.container img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes sky {
+    0%{
+        background-color: rgb(95, 31, 31);
+    }
+    50%{
+        background-color: rgb(244, 61, 61);
+    }
+    75%{
+        background-color:rgb(205, 179, 179);
+    }
+    
+    100%{
+        background-color:rgb(50, 38, 38);
+    }
+    
+}
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    box-shadow:0 0 30px 5px rgb(229, 228, 228);
+    animation: down;
+    animation-duration: 5s;
+}
+@keyframes down{
+    100%{
+        transform: translateY(680px);
+    }
+}
+.moon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: -19px 9px rgb(240, 236, 236);
+    position: relative;
+    left: 80px;
+    top: 30px;
+    opacity: 0;
+
+
+    animation: show;
+    animation-duration: 7s;
+}
+
+@keyframes show {
+    100%{
+        opacity: 1;
+    }
+    
+}
